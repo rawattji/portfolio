@@ -6,7 +6,6 @@ import SpotlightCard from '@/components/common/SpotlightCard';
 import TextEffect from '@/components/ui/TextEffect';
 import { Calendar, MapPin, Building2, Code, Rocket, Trophy, Target } from 'lucide-react';
 import { FaAmazon, FaAws } from 'react-icons/fa';
-import '../../styles/experience-smooth.css';
 
 // Professional Summary
 const professionalSummary = `Software Developer with hands-on internship and project experience in full-stack and backend development. Proficient in Java, C++, JavaScript, TypeScript, React.js, Node.js, PostgreSQL, MongoDB, and AWS microservices. Successfully reduced verification overhead by 65% at Amazon, saving $80/sec through scalable backend solutions. Experienced in building Web GIS defense applications and productivity tools, leveraging cloud-native architectures, REST APIs, and responsive UI frameworks. Strong foundation in DSA, OOP, Agile, and CI/CD pipelines. Targeting roles as Software Developer, Full Stack Developer.`;

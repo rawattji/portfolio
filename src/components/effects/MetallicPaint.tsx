@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import '../../styles/MetallicPaint.css';
 
 type ShaderParams = {
   patternScale: number;

@@ -23,10 +23,8 @@ export default function Home() {
   const [showGradualBlur, setShowGradualBlur] = useState(true);
   const [isReady, setIsReady] = useState(false);
 
-  // Get performance settings
   const performanceSettings = getPerformanceSettings();
 
-  // Handle loading completion
   const handleLoadingComplete = () => {
     setIsReady(true);
   };
@@ -37,10 +35,8 @@ export default function Home() {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       
-      // Show floating avatar after scrolling past the home section
       setShowFloatingAvatar(scrollY > windowHeight * 0.5);
       
-      // Hide GradualBlur when in footer area (last 600px of page)
       const distanceFromBottom = documentHeight - scrollY - windowHeight;
       setShowGradualBlur(distanceFromBottom > 600);
     };
@@ -49,41 +45,31 @@ export default function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Show loading screen until everything is ready
   if (!isReady) {
     return <LoadingScreen onComplete={handleLoadingComplete} />;
   }
 
   return (
     <div className="min-h-screen bg-black">
-      {/* Navigation */}
       <Navbar activeSection={activeSection} />
 
-      {/* Main Content */}
       <main className="relative">
-        {/* Home Section */}
         <HomeSection 
           avatarState={currentState}
           isTransitioning={isTransitioning}
         />
 
-        {/* About Section */}
         <AboutSection />
 
-        {/* Experience Section */}
         <ExperienceSection />
 
-        {/* Projects Section */}
         <InteractiveProjectsSection />
 
-        {/* Resume Section */}
         <ResumeSection />
       </main>
 
-      {/* Footer */}
       <Footer />
 
-      {/* Global GradualBlur - appears everywhere except footer */}
       <div className={`gradual-blur-container ${showGradualBlur ? '' : 'hidden'}`}>
         <div className="fixed bottom-0 left-0 right-0 z-30 pointer-events-none">
           <GradualBlur
@@ -99,7 +85,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Fixed Floating Avatar that follows scroll */}
       <motion.div
         className="fixed bottom-8 right-8 z-50 pointer-events-none"
         initial={{ opacity: 0, scale: 0, y: 20 }}
@@ -116,7 +101,6 @@ export default function Home() {
         }}
       >
         <div className="relative">
-          {/* Avatar with enhanced styling */}
           <div className="w-24 h-24 lg:w-32 lg:h-32 rounded-full bg-gradient-to-br from-olive-500/50 to-olive-700/70 backdrop-blur-md border border-olive-400/70 shadow-2xl flex items-center justify-center">
             <Avatar 
               state={currentState} 
@@ -125,11 +109,9 @@ export default function Home() {
             />
           </div>
           
-          {/* Enhanced glow effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-olive-400/50 to-olive-600/60 rounded-full blur-xl -z-10 animate-pulse" />
           <div className="absolute inset-0 bg-gradient-to-br from-olive-300/30 to-transparent rounded-full -z-5" />
           
-          {/* Floating animation */}
           <motion.div
             className="absolute inset-0 rounded-full"
             animate={{ 

@@ -76,20 +76,6 @@ export const usePreloader = () => {
   }, []);
 
   const preloadComponents = useCallback(async (): Promise<void> => {
-      await Promise.all([
-        import('@/components/sections/AboutSection'),
-        import('@/components/sections/ExperienceSection'),
-        import('@/components/sections/InteractiveProjectsSection'),
-        import('@/components/sections/ResumeSection'),
-        import('@/components/layout/Footer'),
-        import('@/components/effects/GradualBlur'),
-        import('@/components/common/Avatar'),
-        import('@/components/ui/TextEffect'),
-        import('@/components/effects/Aurora'),
-      ]);
-    } catch (error) {
-    }
-    
     await new Promise(resolve => setTimeout(resolve, 500));
     setStatus(prev => ({ ...prev, components: true }));
   }, []);
