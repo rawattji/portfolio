@@ -1,0 +1,79 @@
+/* Smooth ScrollStack transitions */
+.scroll-stack-card {
+  will-change: transform, filter, opacity;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: none; /* Remove any conflicting transitions */
+}
+
+/* Prevent flickering and improve performance */
+.experience-scroll-container {
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.experience-card {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Smooth text rendering during transforms */
+.experience-card * {
+  transform: translateZ(0);
+}
+
+/* Reduce blur during transforms */
+.experience-card img,
+.experience-card svg {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Center alignment fix */
+.scroll-stack-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Smooth backdrop blur */
+.experience-backdrop {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  will-change: backdrop-filter;
+}
+
+/* 3D perspective for smooth transforms */
+.perspective-1000 {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Smooth GPU-accelerated transforms */
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Prevent layout shifts during animations */
+.experience-card {
+  contain: layout style paint;
+}
+
+/* Smooth text during transforms */
+.experience-card h1,
+.experience-card h2,
+.experience-card h3,
+.experience-card h4,
+.experience-card p,
+.experience-card span {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
