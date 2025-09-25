@@ -100,7 +100,7 @@ export const InteractiveProjectsSection: React.FC = () => {
   return (
     <section 
       id="projects" 
-      className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-900/90 to-black"
+      className="relative min-h-screen pt-0 pb-20 overflow-hidden bg-gradient-to-b from-olive-900/95 via-gray-900/90 to-black"
     >
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -110,7 +110,7 @@ export const InteractiveProjectsSection: React.FC = () => {
              }} />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-12">
+      <div className="relative z-10 container mx-auto px-6 lg:px-12 mt-8">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -78,7 +78,7 @@ export const ANIMATION_CONFIG = {
 export const COMMON_CLASSES = {
   glassCard: "bg-black/40 backdrop-blur-xl border-gray-400/20",
   spotlightColor: "rgba(34, 197, 94, 0.1)",
-  sectionContainer: "relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-black to-gray-900/90",
+  sectionContainer: "relative min-h-screen pt-0 pb-20 overflow-hidden bg-gradient-to-b from-black via-gray-900/90 to-gray-900/95",
   container: "relative z-10 container mx-auto px-6 lg:px-12"
 };
 

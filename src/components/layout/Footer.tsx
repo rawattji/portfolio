@@ -45,7 +45,7 @@ const socialLinks = [
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative bg-gradient-to-t from-black via-gray-900/95 to-gray-900/90 border-t border-gray-800/50">
+    <footer className="relative bg-gradient-to-t from-gray-900/95 via-gray-900/90 to-gray-900/95 border-t border-gray-800/50">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0" 

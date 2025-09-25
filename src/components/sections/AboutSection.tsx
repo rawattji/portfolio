@@ -141,7 +141,7 @@ export const AboutSection: React.FC = () => {
       
       <section 
         id="about" 
-        className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-900/95 via-gray-900/90 via-olive-900/80 to-olive-900/95"
+        className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-900/95 via-gray-900/90 via-olive-900/80 to-gray-900/90"
       >
 
       {/* Background pattern */}
