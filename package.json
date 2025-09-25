@@ -2,6 +2,7 @@
   "name": "my_portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rawattji.github.io/portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
