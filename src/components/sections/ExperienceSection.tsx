@@ -53,7 +53,7 @@ export const ExperienceSection: React.FC = () => {
   return (
     <section 
       id="experience" 
-      className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-black to-gray-900/90"
+      className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-900/95 via-gray-900/90 via-olive-900/80 to-olive-900/95"
     >
 
       {/* Background pattern */}
@@ -102,7 +102,7 @@ export const ExperienceSection: React.FC = () => {
           className="max-w-5xl mx-auto mb-20"
         >
           <SpotlightCard 
-            className="bg-black/30 backdrop-blur-lg border-gray-400/20 hover:border-gray-400/40"
+            className="bg-black/30 backdrop-blur-lg border-olive-400/30 hover:border-olive-400/50"
             spotlightColor="rgba(212, 175, 55, 0.1)"
           >
             <div className="p-8 lg:p-12">
@@ -178,7 +178,7 @@ export const ExperienceSection: React.FC = () => {
                     className="w-full perspective-1000"
                   >
                     <SpotlightCard
-                      className="w-full bg-black/40 experience-backdrop border-gray-400/20 hover:border-gray-400/40 transition-all duration-500 will-change-transform transform-gpu"
+                      className="w-full bg-black/40 experience-backdrop border-olive-400/20 hover:border-olive-400/40 transition-all duration-500 will-change-transform transform-gpu"
                       spotlightColor={exp.spotlightColor}
                     >
                     <div className="p-8 lg:p-12">
@@ -242,7 +242,7 @@ export const ExperienceSection: React.FC = () => {
                             <motion.span
                               key={tech}
                               whileHover={{ scale: 1.1 }}
-                              className="px-4 py-2 bg-gradient-to-r from-gray-800/50 to-gray-700/50 text-gray-200 rounded-full text-sm font-medium border border-gray-600/30 shadow-lg"
+                              className="px-4 py-2 bg-gradient-to-r from-olive-800/50 to-olive-700/50 text-olive-200 rounded-full text-sm font-medium border border-olive-600/30 shadow-lg"
                               style={{ boxShadow: `0 0 20px ${exp.iconColor}20` }}
                             >
                               {tech}
