@@ -41,6 +41,8 @@ export const useAvatarState = () => {
           const rect = element.getBoundingClientRect();
           const viewportHeight = window.innerHeight;
           
+          const sectionCenter = rect.top + rect.height / 2;
+          const viewportCenter = viewportHeight / 2;
           const distanceFromCenter = Math.abs(sectionCenter - viewportCenter);
           
           if (rect.bottom >= 0 && rect.top <= viewportHeight) {
