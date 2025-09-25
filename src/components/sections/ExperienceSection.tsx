@@ -53,8 +53,10 @@ export const ExperienceSection: React.FC = () => {
   return (
     <section 
       id="experience" 
-      className="relative min-h-screen py-20 overflow-hidden bg-gradient-to-b from-gray-900/95 via-gray-900/90 via-olive-900/80 to-olive-900/95"
+      className="relative min-h-screen pt-0 pb-20 overflow-hidden bg-gradient-to-b from-gray-900/95 via-gray-900/90 via-olive-900/80 to-olive-900/95"
     >
+      {/* Smooth transition from About section */}
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-transparent via-gray-900/20 to-gray-900/95 pointer-events-none z-10" />
 
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
@@ -64,7 +66,7 @@ export const ExperienceSection: React.FC = () => {
              }} />
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 lg:px-12">
+      <div className="relative z-10 container mx-auto px-6 lg:px-12 mt-16">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
