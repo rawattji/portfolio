@@ -1,3 +1,4 @@
+import React from 'react'
 import { AppProps } from 'next/app'
 import '../src/styles/globals.css'
 import '../src/styles/Aurora.css'
