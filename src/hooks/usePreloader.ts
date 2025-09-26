@@ -23,11 +23,11 @@ export const usePreloader = () => {
 
   const preloadImages = useCallback(async (): Promise<void> => {
     const imageUrls = [
-      '/images/chrome-extension.png',
-      '/images/rushFashion.png',
-      '/images/scrollDay.png',
-      '/images/sureReads.png',
-      '/images/WorkOrbit.png',
+      '/portfolio/images/chrome-extension.png',
+      '/portfolio/images/rushFashion.png',
+      '/portfolio/images/scrollDay.png',
+      '/portfolio/images/sureReads.png',
+      '/portfolio/images/WorkOrbit.png',
     ];
 
     const imagePromises = imageUrls.map((url) => {
@@ -45,11 +45,11 @@ export const usePreloader = () => {
 
   const preloadVideos = useCallback(async (): Promise<void> => {
     const videoUrls = [
-      '/videos/homePage_leftView.mp4',
-      '/videos/aboutSecton_FrontView.mp4',
-      '/videos/experienceSecton_Formal.mp4',
-      '/videos/projectSection_typing.mp4',
-      '/videos/resumeSection_Namaste.mp4',
+      '/portfolio/videos/homePage_leftView.mp4',
+      '/portfolio/videos/aboutSecton_FrontView.mp4',
+      '/portfolio/videos/experienceSecton_Formal.mp4',
+      '/portfolio/videos/projectSection_typing.mp4',
+      '/portfolio/videos/resumeSection_Namaste.mp4',
     ];
 
     const videoPromises = videoUrls.map((url) => {

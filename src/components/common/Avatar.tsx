@@ -21,7 +21,7 @@ const AvatarIdleRight = () => (
     playsInline
     preload="auto"
   >
-    <source src="/videos/homePage_leftView.mp4" type="video/mp4" />
+    <source src="/portfolio/videos/homePage_leftView.mp4" type="video/mp4" />
     {/* Fallback SVG */}
     <svg viewBox="0 0 200 200" className="w-full h-full">
       <circle cx="100" cy="100" r="80" fill="#708659" opacity="0.8" />
@@ -41,7 +41,7 @@ const AvatarIdleFront = () => (
     playsInline
     preload="auto"
   >
-    <source src="/videos/aboutSecton_FrontView.mp4" type="video/mp4" />
+    <source src="/portfolio/videos/aboutSecton_FrontView.mp4" type="video/mp4" />
     {/* Fallback SVG */}
     <svg viewBox="0 0 200 200" className="w-full h-full">
       <circle cx="100" cy="100" r="80" fill="#708659" opacity="0.8" />
@@ -62,7 +62,7 @@ const AvatarFormal = () => (
     playsInline
     preload="auto"
   >
-    <source src="/videos/experienceSecton_Formal.mp4" type="video/mp4" />
+    <source src="/portfolio/videos/experienceSecton_Formal.mp4" type="video/mp4" />
     {/* Fallback SVG */}
     <svg viewBox="0 0 200 200" className="w-full h-full">
       <circle cx="100" cy="100" r="80" fill="#445336" opacity="0.9" />
@@ -85,7 +85,7 @@ const AvatarCreative = () => (
     playsInline
     preload="auto"
   >
-    <source src="/videos/projectSection_typing.mp4" type="video/mp4" />
+    <source src="/portfolio/videos/projectSection_typing.mp4" type="video/mp4" />
     {/* Fallback SVG */}
     <svg viewBox="0 0 200 200" className="w-full h-full">
       <defs>
@@ -112,7 +112,7 @@ const AvatarNamaste = () => (
     playsInline
     preload="auto"
   >
-    <source src="/videos/resumeSection_Namaste.mp4" type="video/mp4" />
+    <source src="/portfolio/videos/resumeSection_Namaste.mp4" type="video/mp4" />
     {/* Fallback SVG */}
     <svg viewBox="0 0 200 200" className="w-full h-full">
       <circle cx="100" cy="100" r="80" fill="#708659" opacity="0.8" />
