@@ -30,9 +30,9 @@ export const ResumeSection: React.FC = React.memo(() => {
   }, [isFullscreen]);
 
   const stats = useMemo(() => [
-    { label: 'Internships', value: '3+', icon: Briefcase, color: 'text-blue-400' },
-    { label: 'Projects', value: '6+', icon: Code, color: 'text-purple-400' },
-    { label: 'Impact', value: '65%', icon: Award, color: 'text-green-400' }
+    { label: 'Internships', value: '2+', icon: Briefcase, color: 'text-blue-400' },
+    { label: 'Projects', value: '5+', icon: Code, color: 'text-purple-400' },
+    { label: 'Impact', value: '80%', icon: Award, color: 'text-green-400' }
   ], []);
 
   useEffect(() => {

@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { NavItem, SectionId } from '@/types';
-import { cn, scrollToSection } from '@/lib/utils';
+import { NavItem, SectionId } from '../../types';
+import { cn, scrollToSection } from '../../lib/utils';
 import { Home, User, Briefcase, FolderOpen, FileText } from 'lucide-react';
 
 interface NavbarProps {

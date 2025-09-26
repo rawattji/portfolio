@@ -8,6 +8,7 @@ import '../src/styles/gradual-blur.css'
 import '../src/styles/metallic-border.css'
 import '../src/styles/MetallicPaint.css'
 import '../src/styles/ScrollStack.css'
+import '../src/styles/Particles.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
